@@ -10,46 +10,46 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: my-custom-theme
 */
 
-.body {
-  font-family: sans-serif; 
+body {
+  font-family: sans-serif; /* فونت پیش‌فرض */
   margin: 0;
   padding: 0;
-  direction: rtl; 
+  direction: rtl; /* راست به چپ */
 }
 .container {
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px; /* حداکثر عرض کانتینر */
+  margin: 0 auto; /* وسط چین کردن کانتینر */
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex; /* استفاده از فلکس باکس برای چیدمان عناصر داخلی کانتینر هدر (لوگو و منو) در یک ردیف */
+  justify-content: space-between; /* قرار دادن حداکثر فضا بین عناصر فلکس (لوگو در یک طرف، منو در طرف دیگر) */
+  align-items: center; /* تراز کردن عناصر فلکس (لوگو و منو) به صورت عمودی در وسط */
 }
 .main-header {
-  color: #fff; 
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  z-index: 100; 
+  color: #fff; /* تعیین رنگ متن داخل هدر به سفید */
+  position: fixed; /* تثبیت موقعیت هدر در بالای صفحه حتی با اسکرول کردن */
+  top: 0; /* تنظیم فاصله هدر از بالای صفحه به 0 برای چسبیدن به بالا */
+  width: 100%; /* تنظیم عرض هدر به 100% عرض صفحه */
+  z-index: 100; /* تعیین مقدار z-index برای هدر به 100 تا مطمئن شویم که روی سایر عناصر قرار می‌گیرد */
   background-color: #f0eeee;
 }
 .logo a {
-  color: #020202; 
-  text-decoration: none; 
-  font-size: 1.5em; 
-  font-weight: bold; 
+  color: #020202; /* تعیین رنگ متن لینک لوگو به سفید */
+  text-decoration: none; /* حذف خط زیر لینک لوگو */
+  font-size: 1.5em; /* تعیین اندازه فونت لوگو به 1.5 برابر اندازه فونت والد */
+  font-weight: bold; /* ضخیم کردن فونت لوگو */
 }
 .main-header ul {
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-  display: flex; 
+  list-style: none; /* حذف نشانه‌های لیست (نقطه‌ها) از لیست غیرمرتب منو */
+  padding: 0; /* حذف فاصله داخلی پیش‌فرض لیست منو */
+  margin: 0; /* حذف حاشیه پیش‌فرض لیست منو */
+  display: flex; /* استفاده از فلکس باکس برای چیدمان آیتم‌های منو در یک ردیف افقی */
   text-decoration: none;
 }
 .main-header li {
-  margin-left: 20px; 
+  margin-left: 20px; /* ایجاد 20 پیکسل فاصله از سمت چپ بین هر آیتم منو */
   text-decoration: none;
 }
 .main-header a {
@@ -59,89 +59,93 @@ Text Domain: my-custom-theme
 
 /* استایل بخش Hero */
 .hero {
-  padding: 80px 0; 
-  text-align: center; 
-  background-image: url(amozesh.png);
+  padding: 80px 0; /* فاصله داخلی بالا و پایین بخش Hero */
+  text-align: center; /* تراز متن و عناصر داخلی به مرکز */
+  /* می‌توانید background-color یا background-image برای پس‌زمینه اضافه کنید */
+  background-image: url(/images/amozesh.png);
 }
+
 .hero-content {
-  max-width: 800px; 
-  margin: 0 auto; 
+  max-width: 800px; /* حداکثر عرض محتوای Hero برای جلوگیری از کشیدگی بیش از حد */
+  margin: 0 auto; /* وسط چین کردن محتوای Hero در صورت داشتن عرض کمتر از max-width */
+}
 
 .hero-title {
-  font-size: 1.4em; 
-  margin-bottom: 20px; 
-  font-weight: bold;
-  color: #ffcc00; 
+  font-size: 1.4em; /* اندازه فونت عنوان اصلی */
+  margin-bottom: 20px; /* فاصله پایین عنوان */
+  font-weight: bold; /* ضخیم کردن فونت عنوان */
+  color: #ffcc00; /* رنگ متن عنوان (قابل تغییر) */
 }
 
 .hero-description {
-  font-size: 3em; 
-  line-height: 1.6; 
-  margin-bottom: 30px; 
-  color: #ffffff; 
+  font-size: 3em; /* اندازه فونت متن توضیحی اصلی */
+  line-height: 1.6; /* ارتفاع خط برای خوانایی بهتر */
+  margin-bottom: 30px; /* فاصله پایین متن توضیحی اصلی */
+  color: #ffffff; /* رنگ متن توضیحی (قابل تغییر) */
 }
 
 .hero-sub-description {
-  font-size: 1em; 
+  font-size: 1em; /* اندازه فونت متن توضیحی فرعی */
   line-height: 1.6;
-  margin-bottom: 40px; 
-  color: #ffffff; 
+  margin-bottom: 40px; /* فاصله پایین متن توضیحی فرعی */
+  color: #ffffff; /* رنگ متن توضیحی فرعی (قابل تغییر) */
 }
 
 .hero-buttons {
-  display: flex; 
-  justify-content: center; 
-  gap: 20px; 
+  display: flex; /* استفاده از فلکس باکس برای چیدمان دکمه‌ها در یک خط */
+  justify-content: center; /* وسط چین کردن دکمه‌ها به صورت افقی */
+  gap: 20px; /* فاصله بین دکمه‌ها */
 }
 
 .button {
-  display: inline-block; 
-  padding: 12px 24px; 
-  text-decoration: none; 
-  border-radius: 5px; 
-  font-size: 1em; 
-  transition: background-color 0.3s ease; 
+  display: inline-block; /* امکان تعیین padding و margin */
+  padding: 12px 24px; /* فاصله داخلی دکمه */
+  text-decoration: none; /* حذف خط زیر لینک */
+  border-radius: 5px; /* گرد کردن گوشه‌های دکمه */
+  font-size: 1em; /* اندازه فونت دکمه */
+  transition: background-color 0.3s ease; /* انیمیشن برای تغییر رنگ در هاور */
 }
 
 .primary-button {
-  background-color: #007bff; 
-  color: #fff; 
-  border: 2px solid #007bff; 
+  background-color: #007bff; /* رنگ پس‌زمینه دکمه اصلی (آبی) */
+  color: #fff; /* رنگ متن دکمه اصلی (سفید) */
+  border: 2px solid #007bff; /* حاشیه دکمه اصلی */
 }
 
 .primary-button:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3; /* تغییر رنگ پس‌زمینه در هاور */
 }
 
 .secondary-button {
-  background-color: transparent; 
-  color: #ffffff; 
-  border: 2px solid #ccc; 
+  background-color: transparent; /* پس‌زمینه شفاف */
+  color: #ffffff; /* رنگ متن دکمه ثانویه (خاکستری) */
+  border: 2px solid #ccc; /* حاشیه دکمه ثانویه */
 }
 
 .secondary-button:hover {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* تغییر رنگ پس‌زمینه در هاور */
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px; /* فاصله بین کارت‌ها */
   padding: 50px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* برای سازگاری با صفحه‌های کوچک */
 }
 .card {
-  width: 255px; 
-  height: 315px; 
-  border-radius: 10px; 
-  text-align: center; 
+  width: 255px; /* عرض کارت */
+  height: 315px; /* ارتفاع کارت */
+  border-radius: 10px; /* گرد کردن گوشه‌ها */
+  text-align: center; /* متن را وسط چین می‌کند */
   padding: 20px; /* فضای داخلی */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه‌ی زیبا برای کارت */
   color: white; /* رنگ متن سفید */
-  font-family: Arial, sans-serif; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  font-family: Arial, sans-serif; /* فونت ساده */
+  display: flex; /* برای قرار دادن محتوا در وسط */
+  flex-direction: column; /* محتوای درون کارت به‌صورت ستونی باشد */
+  justify-content: center; /* محتوای داخلی در مرکز کارت باشد */
+}
 .icon img {
   width: 40px;
   height: 40px;
@@ -165,76 +169,76 @@ Text Domain: my-custom-theme
 
 .logo-containeram {
   display: flex;
-  justify-content: center;
-  align-items: center; 
+  justify-content: center; /* چینش افقی وسط */
+  align-items: center; /* چینش عمودی وسط */
   gap: 40px;
   padding: 10px 50px;
 }
 .container {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-around; 
-  padding: 20px; 
+  display: flex; /* استفاده از فلکس باکس برای قرار دادن کارت ها در کنار هم */
+  flex-direction: row; /* قرار دادن آیتم ها به صورت افقی در یک ردیف */
+  justify-content: space-around; /* توزیع فضای خالی بین و اطراف کارت ها */
+  padding: 20px; /* ایجاد فاصله از لبه های صفحه */
 }
 .product-card {
-  width: 300px; 
-  border: 1px solid #ffffff; 
-  border-radius: 5px; 
-  overflow: hidden; 
-  margin-bottom: 20px; 
+  width: 300px; /* تعیین عرض ثابت برای هر کارت */
+  border: 1px solid #ffffff; /* اضافه کردن یک خط نازک به عنوان حاشیه */
+  border-radius: 5px; /* گرد کردن گوشه های کارت */
+  overflow: hidden; /* مخفی کردن محتوایی که از حاشیه بیرون می زند */
+  margin-bottom: 20px; /* ایجاد فاصله از پایین برای کارت های بعدی (اگر در حالت عمودی باشند) */
 }
 .product-card h3 {
-  font-size: 1.2em; 
-  margin-top: 10px; 
-  margin-bottom: 5px; 
-  padding: 0 10px; 
+  font-size: 1.2em; /* تعیین اندازه فونت */
+  margin-top: 10px; /* ایجاد فاصله از بالای تصویر */
+  margin-bottom: 5px; /* ایجاد فاصله از پایین عنوان */
+  padding: 0 10px; /* ایجاد فاصله از طرفین متن */
 }
 .rating {
-  display: flex; 
-  align-items: center; 
-  margin-bottom: 20px; 
+  display: flex; /* استفاده از فلکس باکس برای قرار دادن ستاره ها و تعداد رای در کنار هم */
+  align-items: center; /* قرار دادن محتوا در مرکز عمودی */
+  margin-bottom: 20px; /* ایجاد فاصله از پایین بخش امتیاز */
   padding: 0px 20px;
 }
 /* استایل برای خود ستاره ها (ممکن است از یک فونت آیکون یا یونیکد استفاده شده باشد) */
 .product-card .rating span:first-child {
-  color: gold; 
-  font-size: 2em; 
-  margin-right: 5px; 
+  color: gold; /* رنگ زرد برای ستاره ها */
+  font-size: 2em; /* اندازه فونت ستاره ها */
+  margin-right: 5px; /* ایجاد فاصله از سمت راست ستاره ها */
 }
 .product-card .rating span:last-child {
-  color: #777; 
-  font-size: 0.9em; 
+  color: #777; /* رنگ خاکستری برای تعداد رای ها */
+  font-size: 0.9em; /* اندازه فونت تعداد رای ها */
 }
 .rating-container {
   display: flex;
-  align-items: center; 
+  align-items: center; /* برای تراز عمودی عناصر در صورت نیاز (اختیاری) */
 }
 .rating-count {
-  margin-left: 20px; 
+  margin-left: 20px; /* برای ایجاد فاصله بین رای و ستاره (اختیاری) */
 }
 
 .rating-count,
 .stars,
 .price {
   display: inline-block;
-  margin-left: 15px; 
+  margin-left: 15px; /* برای ایجاد فاصله بین عناصر (اختیاری) */
 }
 
 .stars {
-  color: gold; 
+  color: gold; /* رنگ ستاره‌ها (اختیاری) */
   font-size: 2em;
 }
 
 .price {
-  font-weight: bold; 
+  font-weight: bold; /* پررنگ کردن قیمت (اختیاری) */
   margin-right: 50px;
 }
 .whole-star {
   display: flex;
 }
 .container-matn {
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px; /* حداکثر عرض کانتینر */
+  margin: 0 auto; /* وسط چین کردن کانتینر */
   text-align: center;
   margin-bottom: 5px;
 }
@@ -247,12 +251,12 @@ Text Domain: my-custom-theme
   margin-top: 0px;
 }
 .container-matnm {
-  margin: 0 auto; 
+  margin: 0 auto; /* وسط چین کردن کانتینر */
   padding: 80px 0;
   text-align: center;
   margin-bottom: 0px;
   margin-top: 0px;
-  background-image: url(aks-main.png);
+  background-image: url(/images/aks-main.png);
 }
 .container-matnm p {
   margin-bottom: 1px;
@@ -265,25 +269,25 @@ Text Domain: my-custom-theme
 }
 .button-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  
+  justify-content: center; /* برای قرار دادن دکمه‌ها در وسط به صورت افقی */
+  align-items: center; /* برای تراز عمودی دکمه‌ها (اگر ارتفاع متفاوتی داشته باشند) */
+  /* می‌توانید استایل‌های کلی کانتینر دکمه‌ها را اینجا تنظیم کنید */
   margin-top: 20px;
   gap: 20px;
 }
 .start-button,
 .show-courses {
-  padding: 10px 20px; 
-  margin: 5px; 
-  border: none; 
-  border-radius: 5px; 
-  background-color: #0acc86; 
-  color: white; 
+  padding: 10px 20px; /* فاصله داخلی دکمه‌ها */
+  margin: 5px; /* فاصله بین دکمه‌ها */
+  border: none; /* حذف حاشیه پیش‌فرض دکمه‌ها */
+  border-radius: 5px; /* گرد کردن گوشه‌های دکمه‌ها (اختیاری) */
+  background-color: #0acc86; /* رنگ پس‌زمینه دکمه (مثال) */
+  color: white; /* رنگ متن دکمه (مثال) */
   font-size: 16px;
-  cursor: pointer; 
+  cursor: pointer; /* تغییر شکل ماوس هنگام قرار گرفتن روی دکمه */
 }
 .show-courses {
-  background-color: #f5b016; 
+  background-color: #f5b016; /* رنگ پس‌زمینه دکمه دوم (مثال) */
 }
 
 .left-side {
@@ -302,18 +306,18 @@ Text Domain: my-custom-theme
   margin-right: 50px;
 }
 .newsletter-section {
-  color: #ffffff; 
-  padding: 40px; 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  border-radius: 8px; 
-  margin: 20px; /
+  color: #ffffff; /* رنگ سفید برای متن اصلی */
+  padding: 40px; /* فاصله داخلی از همه طرف */
+  display: flex; /* استفاده از فلکس باکس برای چیدمان محتوا در کنار هم */
+  justify-content: space-between; /* قرار دادن فاصله مساوی بین عناصر اصلی */
+  align-items: center; /* تراز کردن عمودی عناصر در وسط */
+  border-radius: 8px; /* گرد کردن گوشه‌ها */
+  margin: 20px; /* فاصله از عناصر اطراف */
 }
 
-
+/* استایل برای محتوای اصلی خبرنامه (عنوان، فرم، ضمانت) */
 .newsletter-content {
-  text-align: center; 
+  text-align: center; /* تراز کردن متن در وسط */
   background-image: linear-gradient(19deg, #f5b016 0%, #ff8800 100%);
   padding-right: 100px;
   padding-left: 100px;
@@ -321,99 +325,101 @@ Text Domain: my-custom-theme
 
 /* استایل برای هدر خبرنامه (عنوان و زیرعنوان) */
 .newsletter-header h2 {
-  margin-bottom: 10px; 
-  font-size: 2em; 
+  margin-bottom: 10px; /* فاصله پایین عنوان */
+  font-size: 2em; /* اندازه بزرگتر فونت برای عنوان */
+}
 
 .newsletter-header p {
-  font-size: 1.1em; 
-  margin-bottom: 20px; 
+  font-size: 1.1em; /* اندازه فونت کمی بزرگتر برای زیرعنوان */
+  margin-bottom: 20px; /* فاصله پایین زیرعنوان */
 }
 
 /* استایل برای فرم اشتراک */
 .subscription-form {
-  display: flex; 
-  gap: 10px; 
-  margin-bottom: 15px; 
-  justify-content: center; 
+  display: flex; /* استفاده از فلکس باکس برای قرار دادن ورودی و دکمه در کنار هم */
+  gap: 10px; /* فاصله بین عناصر داخل فرم */
+  margin-bottom: 15px; /* فاصله پایین فرم */
+  justify-content: center; /* تراز کردن عناصر فرم در وسط */
 }
 
 .email-input {
-  padding: 12px 15px; 
-  border: none; 
-  border-radius: 5px; 
-  font-size: 1em; 
-  width: 300px; 
-  color: #333; 
+  padding: 12px 15px; /* فاصله داخلی بیشتر برای فیلد ورودی */
+  border: none; /* حذف حاشیه پیش فرض */
+  border-radius: 5px; /* گرد کردن گوشه‌ها */
+  font-size: 1em; /* اندازه فونت */
+  width: 300px; /* تعیین عرض فیلد ورودی */
+  color: #333; /* رنگ متن داخل فیلد ورودی */
 }
 
 .email-input::placeholder {
-  color: #777; 
+  color: #777; /* رنگ متن راهنما */
 }
 
 .subscribe-button {
-  background-color: #0000ff; 
-  color: #ffffff; 
-  border: none; 
-  padding: 12px 25px; 
-  border-radius: 5px; 
-  font-size: 1em; 
-  cursor: pointer; 
-  display: flex; 
-  align-items: center; 
-  gap: 8px; 
+  background-color: #0000ff; /* رنگ آبی برای دکمه اشتراک */
+  color: #ffffff; /* رنگ سفید برای متن دکمه */
+  border: none; /* حذف حاشیه */
+  padding: 12px 25px; /* فاصله داخلی بیشتر برای دکمه */
+  border-radius: 5px; /* گرد کردن گوشه‌ها */
+  font-size: 1em; /* اندازه فونت */
+  cursor: pointer; /* تغییر نشانگر ماوس به حالت اشاره */
+  display: flex; /* استفاده از فلکس باکس برای تراز کردن آیکون و متن */
+  align-items: center; /* تراز کردن عمودی آیکون و متن */
+  gap: 8px; /* فاصله بین آیکون و متن */
+}
 
 .subscribe-button:hover {
-  background-color: #0000aa; 
+  background-color: #0000aa; /* رنگ آبی تیره‌تر در حالت hover */
 }
 
 /* استایل برای متن ضمانت */
 .guarantee {
-  font-size: 0.9em; 
-  color: #ffffff; 
+  font-size: 0.9em; /* اندازه فونت کوچکتر */
+  color: #ffffff; /* رنگ خاکستری روشن */
 }
 
 /* استایل برای بخش اطلاعات اضافی */
 .additional-info {
-  text-align: right; 
+  text-align: right; /* تراز کردن متن به سمت راست */
 }
 
 .additional-info h3 {
-  font-size: 1.5em; 
-  margin-bottom: 10px; 
+  font-size: 1.5em; /* اندازه فونت برای عنوان اطلاعات اضافی */
+  margin-bottom: 10px; /* فاصله پایین عنوان */
 }
 
 .additional-info p {
-  font-size: 1em; 
-  color: #0c0c0c; 
+  font-size: 1em; /* اندازه فونت برای پاراگراف اطلاعات اضافی */
+  color: #0c0c0c; /* رنگ خاکستری روشن */
 }
 
 /* استایل برای آیکون زنگ */
 .bell-icon {
-  width: 20px; 
-  height: 20px; 
+  width: 20px; /* تعیین عرض آیکون */
+  height: 20px; /* تعیین ارتفاع آیکون */
 }
 
 /* واکنشگرا کردن طرح برای صفحه‌های کوچکتر */
 @media (max-width: 768px) {
   .newsletter-section {
-    flex-direction: column; 
-    text-align: center; 
+    flex-direction: column; /* چیدن عناصر به صورت عمودی در صفحه‌های کوچکتر */
+    text-align: center; /* تراز کردن متن در وسط */
   }
 
   .additional-info {
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center; /* تراز کردن متن در وسط در صفحه‌های کوچکتر */
+    margin-top: 20px; /* ایجاد فاصله بین بخش‌ها */
   }
 
   .subscription-form {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column; /* چیدن ورودی و دکمه به صورت عمودی */
+    align-items: center; /* تراز کردن عناصر فرم در وسط */
   }
 
   .email-input {
-    width: 100%; 
-    margin-right: 0; 
-    margin-bottom: 10px; 
+    width: 100%; /* اشغال تمام عرض در صفحه‌های کوچکتر */
+    margin-right: 0; /* حذف فاصله راست */
+    margin-bottom: 10px; /* ایجاد فاصله پایین بین ورودی و دکمه */
   }
 }
 .whole-class {
@@ -424,29 +430,29 @@ Text Domain: my-custom-theme
   list-style-type: none;
   padding-top: 30px;
   padding-bottom: 190px;
-  background: url(aks-footor2.png);
-  background-size: cover; 
-  background-repeat: no-repeat; 
+  background: url(/images/aks-footor2.png);
+  background-size: cover; /* عکس تمام فضا را می‌گیرد و نسبت تصویر را حفظ می‌کند */
+  background-repeat: no-repeat; /* از تکرار عکس جلوگیری می‌کند */
 }
 
 .container-footer {
   width: 1200px;
 }
 .footer-1 ul {
-  list-style-type: none; 
+  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
 }
 .footer-2 ul {
-  list-style-type: none; 
+  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
 }
 .footer-3 ul {
-  list-style-type: none; 
+  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
 }
 .footer-4 ul {
-  list-style-type: none; 
+  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
 }
 .main-li1 {
   margin-bottom: 10px;
-  text-align: right; 
+  text-align: right; /* حفظ تراز متن به راست */
 }
 .menu li {
   display: flex;
@@ -468,7 +474,7 @@ Text Domain: my-custom-theme
   list-style: none;
   padding: 0;
   margin: 0;
-  direction: rtl; 
+  direction: rtl; /* چون فارسیه */
   width: fit-content;
   color: black;
 }
@@ -510,7 +516,7 @@ Text Domain: my-custom-theme
   text-align: center;
   line-height: 16px;
   font-size: 14px;
-  margin-right: 8px; 
+  margin-right: 8px; /* به جای margin-left برای فاصله بین متن و آیکون */
 }
 .icons {
   display: inline-block;
@@ -520,7 +526,7 @@ Text Domain: my-custom-theme
   text-align: center;
   line-height: 16px;
   font-size: 14px;
-  margin-right: 8px; 
+  margin-right: 8px; /* به جای margin-left برای فاصله بین متن و آیکون */
 }
 .additional-info {
   color: #000000;
