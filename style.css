@@ -133,16 +133,15 @@ body {
 .card {
   width: 255px; 
   height: 315px; 
-  border-radius: 10px; /* گرد کردن گوشه‌ها */
-  text-align: center; /* متن را وسط چین می‌کند */
+  border-radius: 10px; 
+  text-align: center; 
   padding: 20px; /* فضای داخلی */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه‌ی زیبا برای کارت */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   color: white; /* رنگ متن سفید */
-  font-family: Arial, sans-serif; /* فونت ساده */
-  display: flex; /* برای قرار دادن محتوا در وسط */
-  flex-direction: column; /* محتوای درون کارت به‌صورت ستونی باشد */
-  justify-content: center; /* محتوای داخلی در مرکز کارت باشد */
-}
+  font-family: Arial, sans-serif; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 .icon img {
   width: 40px;
   height: 40px;
@@ -166,23 +165,23 @@ body {
 
 .logo-containeram {
   display: flex;
-  justify-content: center; /* چینش افقی وسط */
-  align-items: center; /* چینش عمودی وسط */
+  justify-content: center;
+  align-items: center; 
   gap: 40px;
   padding: 10px 50px;
 }
 .container {
-  display: flex; /* استفاده از فلکس باکس برای قرار دادن کارت ها در کنار هم */
-  flex-direction: row; /* قرار دادن آیتم ها به صورت افقی در یک ردیف */
-  justify-content: space-around; /* توزیع فضای خالی بین و اطراف کارت ها */
-  padding: 20px; /* ایجاد فاصله از لبه های صفحه */
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around; 
+  padding: 20px; 
 }
 .product-card {
-  width: 300px; /* تعیین عرض ثابت برای هر کارت */
-  border: 1px solid #ffffff; /* اضافه کردن یک خط نازک به عنوان حاشیه */
-  border-radius: 5px; /* گرد کردن گوشه های کارت */
-  overflow: hidden; /* مخفی کردن محتوایی که از حاشیه بیرون می زند */
-  margin-bottom: 20px; /* ایجاد فاصله از پایین برای کارت های بعدی (اگر در حالت عمودی باشند) */
+  width: 300px; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px; 
+  overflow: hidden; 
+  margin-bottom: 20px; 
 }
 .product-card h3 {
   font-size: 1.2em; /* تعیین اندازه فونت */
