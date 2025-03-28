@@ -60,8 +60,8 @@ body {
 /* استایل بخش Hero */
 .hero {
   padding: 80px 0; /* فاصله داخلی بالا و پایین بخش Hero */
-  text-align: center; /* تراز متن و عناصر داخلی به مرکز */
-  /* می‌توانید background-color یا background-image برای پس‌زمینه اضافه کنید */
+  text-align: center; 
+
   background-image: url(amozesh.png);
 }
 
