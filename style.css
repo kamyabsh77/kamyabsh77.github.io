@@ -184,57 +184,57 @@ body {
   margin-bottom: 20px; 
 }
 .product-card h3 {
-  font-size: 1.2em; /* تعیین اندازه فونت */
-  margin-top: 10px; /* ایجاد فاصله از بالای تصویر */
-  margin-bottom: 5px; /* ایجاد فاصله از پایین عنوان */
-  padding: 0 10px; /* ایجاد فاصله از طرفین متن */
+  font-size: 1.2em; 
+  margin-top: 10px; 
+  margin-bottom: 5px; 
+  padding: 0 10px; 
 }
 .rating {
-  display: flex; /* استفاده از فلکس باکس برای قرار دادن ستاره ها و تعداد رای در کنار هم */
-  align-items: center; /* قرار دادن محتوا در مرکز عمودی */
-  margin-bottom: 20px; /* ایجاد فاصله از پایین بخش امتیاز */
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px; 
   padding: 0px 20px;
 }
 /* استایل برای خود ستاره ها (ممکن است از یک فونت آیکون یا یونیکد استفاده شده باشد) */
 .product-card .rating span:first-child {
-  color: gold; /* رنگ زرد برای ستاره ها */
-  font-size: 2em; /* اندازه فونت ستاره ها */
-  margin-right: 5px; /* ایجاد فاصله از سمت راست ستاره ها */
+  color: gold; 
+  font-size: 2em; 
+  margin-right: 5px; 
 }
 .product-card .rating span:last-child {
-  color: #777; /* رنگ خاکستری برای تعداد رای ها */
-  font-size: 0.9em; /* اندازه فونت تعداد رای ها */
+  color: #777; 
+  font-size: 0.9em; 
 }
 .rating-container {
   display: flex;
-  align-items: center; /* برای تراز عمودی عناصر در صورت نیاز (اختیاری) */
+  align-items: center; 
 }
 .rating-count {
-  margin-left: 20px; /* برای ایجاد فاصله بین رای و ستاره (اختیاری) */
+  margin-left: 20px; 
 }
 
 .rating-count,
 .stars,
 .price {
   display: inline-block;
-  margin-left: 15px; /* برای ایجاد فاصله بین عناصر (اختیاری) */
+  margin-left: 15px; 
 }
 
 .stars {
-  color: gold; /* رنگ ستاره‌ها (اختیاری) */
+  color: gold; 
   font-size: 2em;
 }
 
 .price {
-  font-weight: bold; /* پررنگ کردن قیمت (اختیاری) */
+  font-weight: bold; 
   margin-right: 50px;
 }
 .whole-star {
   display: flex;
 }
 .container-matn {
-  max-width: 1200px; /* حداکثر عرض کانتینر */
-  margin: 0 auto; /* وسط چین کردن کانتینر */
+  max-width: 1200px; 
+  margin: 0 auto; 
   text-align: center;
   margin-bottom: 5px;
 }
@@ -247,7 +247,7 @@ body {
   margin-top: 0px;
 }
 .container-matnm {
-  margin: 0 auto; /* وسط چین کردن کانتینر */
+  margin: 0 auto; 
   padding: 80px 0;
   text-align: center;
   margin-bottom: 0px;
@@ -265,25 +265,25 @@ body {
 }
 .button-container {
   display: flex;
-  justify-content: center; /* برای قرار دادن دکمه‌ها در وسط به صورت افقی */
-  align-items: center; /* برای تراز عمودی دکمه‌ها (اگر ارتفاع متفاوتی داشته باشند) */
-  /* می‌توانید استایل‌های کلی کانتینر دکمه‌ها را اینجا تنظیم کنید */
+  justify-content: center; 
+  align-items: center; 
+  
   margin-top: 20px;
   gap: 20px;
 }
 .start-button,
 .show-courses {
-  padding: 10px 20px; /* فاصله داخلی دکمه‌ها */
-  margin: 5px; /* فاصله بین دکمه‌ها */
-  border: none; /* حذف حاشیه پیش‌فرض دکمه‌ها */
-  border-radius: 5px; /* گرد کردن گوشه‌های دکمه‌ها (اختیاری) */
-  background-color: #0acc86; /* رنگ پس‌زمینه دکمه (مثال) */
-  color: white; /* رنگ متن دکمه (مثال) */
+  padding: 10px 20px; 
+  margin: 5px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #0acc86; 
+  color: white; 
   font-size: 16px;
-  cursor: pointer; /* تغییر شکل ماوس هنگام قرار گرفتن روی دکمه */
+  cursor: pointer; 
 }
 .show-courses {
-  background-color: #f5b016; /* رنگ پس‌زمینه دکمه دوم (مثال) */
+  background-color: #f5b016; 
 }
 
 .left-side {
@@ -302,18 +302,18 @@ body {
   margin-right: 50px;
 }
 .newsletter-section {
-  color: #ffffff; /* رنگ سفید برای متن اصلی */
-  padding: 40px; /* فاصله داخلی از همه طرف */
-  display: flex; /* استفاده از فلکس باکس برای چیدمان محتوا در کنار هم */
-  justify-content: space-between; /* قرار دادن فاصله مساوی بین عناصر اصلی */
-  align-items: center; /* تراز کردن عمودی عناصر در وسط */
-  border-radius: 8px; /* گرد کردن گوشه‌ها */
-  margin: 20px; /* فاصله از عناصر اطراف */
+  color: #ffffff; 
+  padding: 40px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border-radius: 8px; 
+  margin: 20px; /
 }
 
-/* استایل برای محتوای اصلی خبرنامه (عنوان، فرم، ضمانت) */
+
 .newsletter-content {
-  text-align: center; /* تراز کردن متن در وسط */
+  text-align: center; 
   background-image: linear-gradient(19deg, #f5b016 0%, #ff8800 100%);
   padding-right: 100px;
   padding-left: 100px;
@@ -321,12 +321,11 @@ body {
 
 /* استایل برای هدر خبرنامه (عنوان و زیرعنوان) */
 .newsletter-header h2 {
-  margin-bottom: 10px; /* فاصله پایین عنوان */
-  font-size: 2em; /* اندازه بزرگتر فونت برای عنوان */
-}
+  margin-bottom: 10px; 
+  font-size: 2em; 
 
 .newsletter-header p {
-  font-size: 1.1em; /* اندازه فونت کمی بزرگتر برای زیرعنوان */
+  font-size: 1.1em; 
   margin-bottom: 20px; 
 }
 
