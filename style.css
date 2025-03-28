@@ -60,11 +60,10 @@ body {
 /* استایل بخش Hero */
 .hero {
   padding: 80px 0; /* فاصله داخلی بالا و پایین بخش Hero */
-  text-align: center; 
-
+  text-align: center; /* تراز متن و عناصر داخلی به مرکز */
+  /* می‌توانید background-color یا background-image برای پس‌زمینه اضافه کنید */
   background-image: url(amozesh.png);
 }
-
 .hero-content {
   max-width: 800px; /* حداکثر عرض محتوای Hero برای جلوگیری از کشیدگی بیش از حد */
   margin: 0 auto; /* وسط چین کردن محتوای Hero در صورت داشتن عرض کمتر از max-width */
