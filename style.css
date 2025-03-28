@@ -65,75 +65,74 @@ body {
 }
 .hero-content {
   max-width: 800px; 
-  margin: 0 auto; /* وسط چین کردن محتوای Hero در صورت داشتن عرض کمتر از max-width */
-}
+  margin: 0 auto; 
 
 .hero-title {
-  font-size: 1.4em; /* اندازه فونت عنوان اصلی */
-  margin-bottom: 20px; /* فاصله پایین عنوان */
-  font-weight: bold; /* ضخیم کردن فونت عنوان */
-  color: #ffcc00; /* رنگ متن عنوان (قابل تغییر) */
+  font-size: 1.4em; 
+  margin-bottom: 20px; 
+  font-weight: bold;
+  color: #ffcc00; 
 }
 
 .hero-description {
-  font-size: 3em; /* اندازه فونت متن توضیحی اصلی */
-  line-height: 1.6; /* ارتفاع خط برای خوانایی بهتر */
-  margin-bottom: 30px; /* فاصله پایین متن توضیحی اصلی */
-  color: #ffffff; /* رنگ متن توضیحی (قابل تغییر) */
+  font-size: 3em; 
+  line-height: 1.6; 
+  margin-bottom: 30px; 
+  color: #ffffff; 
 }
 
 .hero-sub-description {
-  font-size: 1em; /* اندازه فونت متن توضیحی فرعی */
+  font-size: 1em; 
   line-height: 1.6;
-  margin-bottom: 40px; /* فاصله پایین متن توضیحی فرعی */
-  color: #ffffff; /* رنگ متن توضیحی فرعی (قابل تغییر) */
+  margin-bottom: 40px; 
+  color: #ffffff; 
 }
 
 .hero-buttons {
-  display: flex; /* استفاده از فلکس باکس برای چیدمان دکمه‌ها در یک خط */
-  justify-content: center; /* وسط چین کردن دکمه‌ها به صورت افقی */
-  gap: 20px; /* فاصله بین دکمه‌ها */
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .button {
-  display: inline-block; /* امکان تعیین padding و margin */
-  padding: 12px 24px; /* فاصله داخلی دکمه */
-  text-decoration: none; /* حذف خط زیر لینک */
-  border-radius: 5px; /* گرد کردن گوشه‌های دکمه */
-  font-size: 1em; /* اندازه فونت دکمه */
-  transition: background-color 0.3s ease; /* انیمیشن برای تغییر رنگ در هاور */
+  display: inline-block; 
+  padding: 12px 24px; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-size: 1em; 
+  transition: background-color 0.3s ease; 
 }
 
 .primary-button {
-  background-color: #007bff; /* رنگ پس‌زمینه دکمه اصلی (آبی) */
-  color: #fff; /* رنگ متن دکمه اصلی (سفید) */
-  border: 2px solid #007bff; /* حاشیه دکمه اصلی */
+  background-color: #007bff; 
+  color: #fff; 
+  border: 2px solid #007bff; 
 }
 
 .primary-button:hover {
-  background-color: #0056b3; /* تغییر رنگ پس‌زمینه در هاور */
+  background-color: #0056b3; 
 }
 
 .secondary-button {
-  background-color: transparent; /* پس‌زمینه شفاف */
-  color: #ffffff; /* رنگ متن دکمه ثانویه (خاکستری) */
-  border: 2px solid #ccc; /* حاشیه دکمه ثانویه */
+  background-color: transparent; 
+  color: #ffffff; 
+  border: 2px solid #ccc; 
 }
 
 .secondary-button:hover {
-  background-color: #f0f0f0; /* تغییر رنگ پس‌زمینه در هاور */
+  background-color: #f0f0f0;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* فاصله بین کارت‌ها */
+  gap: 20px; 
   padding: 50px;
-  flex-wrap: wrap; /* برای سازگاری با صفحه‌های کوچک */
+  flex-wrap: wrap; 
 }
 .card {
-  width: 255px; /* عرض کارت */
-  height: 315px; /* ارتفاع کارت */
+  width: 255px; 
+  height: 315px; 
   border-radius: 10px; /* گرد کردن گوشه‌ها */
   text-align: center; /* متن را وسط چین می‌کند */
   padding: 20px; /* فضای داخلی */
