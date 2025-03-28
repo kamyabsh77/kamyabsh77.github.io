@@ -11,45 +11,45 @@ Text Domain: my-custom-theme
 */
 
 body {
-  font-family: sans-serif; /* فونت پیش‌فرض */
+  font-family: sans-serif; 
   margin: 0;
   padding: 0;
-  direction: rtl; /* راست به چپ */
+  direction: rtl; 
 }
 .container {
-  max-width: 1200px; /* حداکثر عرض کانتینر */
-  margin: 0 auto; /* وسط چین کردن کانتینر */
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex; /* استفاده از فلکس باکس برای چیدمان عناصر داخلی کانتینر هدر (لوگو و منو) در یک ردیف */
-  justify-content: space-between; /* قرار دادن حداکثر فضا بین عناصر فلکس (لوگو در یک طرف، منو در طرف دیگر) */
-  align-items: center; /* تراز کردن عناصر فلکس (لوگو و منو) به صورت عمودی در وسط */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 .main-header {
-  color: #fff; /* تعیین رنگ متن داخل هدر به سفید */
-  position: fixed; /* تثبیت موقعیت هدر در بالای صفحه حتی با اسکرول کردن */
-  top: 0; /* تنظیم فاصله هدر از بالای صفحه به 0 برای چسبیدن به بالا */
-  width: 100%; /* تنظیم عرض هدر به 100% عرض صفحه */
-  z-index: 100; /* تعیین مقدار z-index برای هدر به 100 تا مطمئن شویم که روی سایر عناصر قرار می‌گیرد */
+  color: #fff; 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 100; 
   background-color: #f0eeee;
 }
 .logo a {
-  color: #020202; /* تعیین رنگ متن لینک لوگو به سفید */
-  text-decoration: none; /* حذف خط زیر لینک لوگو */
-  font-size: 1.5em; /* تعیین اندازه فونت لوگو به 1.5 برابر اندازه فونت والد */
-  font-weight: bold; /* ضخیم کردن فونت لوگو */
+  color: #020202; 
+  text-decoration: none; 
+  font-size: 1.5em; 
+  font-weight: bold; 
 }
 .main-header ul {
-  list-style: none; /* حذف نشانه‌های لیست (نقطه‌ها) از لیست غیرمرتب منو */
-  padding: 0; /* حذف فاصله داخلی پیش‌فرض لیست منو */
-  margin: 0; /* حذف حاشیه پیش‌فرض لیست منو */
-  display: flex; /* استفاده از فلکس باکس برای چیدمان آیتم‌های منو در یک ردیف افقی */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
   text-decoration: none;
 }
 .main-header li {
-  margin-left: 20px; /* ایجاد 20 پیکسل فاصله از سمت چپ بین هر آیتم منو */
+  margin-left: 20px; 
   text-decoration: none;
 }
 .main-header a {
@@ -59,13 +59,12 @@ body {
 
 /* استایل بخش Hero */
 .hero {
-  padding: 80px 0; /* فاصله داخلی بالا و پایین بخش Hero */
-  text-align: center; /* تراز متن و عناصر داخلی به مرکز */
-  /* می‌توانید background-color یا background-image برای پس‌زمینه اضافه کنید */
+  padding: 80px 0; 
+  text-align: center; 
   background-image: url(amozesh.png);
 }
 .hero-content {
-  max-width: 800px; /* حداکثر عرض محتوای Hero برای جلوگیری از کشیدگی بیش از حد */
+  max-width: 800px; 
   margin: 0 auto; /* وسط چین کردن محتوای Hero در صورت داشتن عرض کمتر از max-width */
 }
 
