@@ -327,95 +327,94 @@ body {
 
 .newsletter-header p {
   font-size: 1.1em; /* اندازه فونت کمی بزرگتر برای زیرعنوان */
-  margin-bottom: 20px; /* فاصله پایین زیرعنوان */
+  margin-bottom: 20px; 
 }
 
 /* استایل برای فرم اشتراک */
 .subscription-form {
-  display: flex; /* استفاده از فلکس باکس برای قرار دادن ورودی و دکمه در کنار هم */
-  gap: 10px; /* فاصله بین عناصر داخل فرم */
-  margin-bottom: 15px; /* فاصله پایین فرم */
-  justify-content: center; /* تراز کردن عناصر فرم در وسط */
+  display: flex; 
+  gap: 10px; 
+  margin-bottom: 15px; 
+  justify-content: center; 
 }
 
 .email-input {
-  padding: 12px 15px; /* فاصله داخلی بیشتر برای فیلد ورودی */
-  border: none; /* حذف حاشیه پیش فرض */
-  border-radius: 5px; /* گرد کردن گوشه‌ها */
-  font-size: 1em; /* اندازه فونت */
-  width: 300px; /* تعیین عرض فیلد ورودی */
-  color: #333; /* رنگ متن داخل فیلد ورودی */
+  padding: 12px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1em; 
+  width: 300px; 
+  color: #333; 
 }
 
 .email-input::placeholder {
-  color: #777; /* رنگ متن راهنما */
+  color: #777; 
 }
 
 .subscribe-button {
-  background-color: #0000ff; /* رنگ آبی برای دکمه اشتراک */
-  color: #ffffff; /* رنگ سفید برای متن دکمه */
-  border: none; /* حذف حاشیه */
-  padding: 12px 25px; /* فاصله داخلی بیشتر برای دکمه */
-  border-radius: 5px; /* گرد کردن گوشه‌ها */
-  font-size: 1em; /* اندازه فونت */
-  cursor: pointer; /* تغییر نشانگر ماوس به حالت اشاره */
-  display: flex; /* استفاده از فلکس باکس برای تراز کردن آیکون و متن */
-  align-items: center; /* تراز کردن عمودی آیکون و متن */
-  gap: 8px; /* فاصله بین آیکون و متن */
-}
+  background-color: #0000ff; 
+  color: #ffffff; 
+  border: none; 
+  padding: 12px 25px; 
+  border-radius: 5px; 
+  font-size: 1em; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
 
 .subscribe-button:hover {
-  background-color: #0000aa; /* رنگ آبی تیره‌تر در حالت hover */
+  background-color: #0000aa; 
 }
 
 /* استایل برای متن ضمانت */
 .guarantee {
-  font-size: 0.9em; /* اندازه فونت کوچکتر */
-  color: #ffffff; /* رنگ خاکستری روشن */
+  font-size: 0.9em; 
+  color: #ffffff; 
 }
 
 /* استایل برای بخش اطلاعات اضافی */
 .additional-info {
-  text-align: right; /* تراز کردن متن به سمت راست */
+  text-align: right; 
 }
 
 .additional-info h3 {
-  font-size: 1.5em; /* اندازه فونت برای عنوان اطلاعات اضافی */
-  margin-bottom: 10px; /* فاصله پایین عنوان */
+  font-size: 1.5em; 
+  margin-bottom: 10px; 
 }
 
 .additional-info p {
-  font-size: 1em; /* اندازه فونت برای پاراگراف اطلاعات اضافی */
-  color: #0c0c0c; /* رنگ خاکستری روشن */
+  font-size: 1em; 
+  color: #0c0c0c; 
 }
 
 /* استایل برای آیکون زنگ */
 .bell-icon {
-  width: 20px; /* تعیین عرض آیکون */
-  height: 20px; /* تعیین ارتفاع آیکون */
+  width: 20px; 
+  height: 20px; 
 }
 
 /* واکنشگرا کردن طرح برای صفحه‌های کوچکتر */
 @media (max-width: 768px) {
   .newsletter-section {
-    flex-direction: column; /* چیدن عناصر به صورت عمودی در صفحه‌های کوچکتر */
-    text-align: center; /* تراز کردن متن در وسط */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   .additional-info {
-    text-align: center; /* تراز کردن متن در وسط در صفحه‌های کوچکتر */
-    margin-top: 20px; /* ایجاد فاصله بین بخش‌ها */
+    text-align: center; 
+    margin-top: 20px; 
   }
 
   .subscription-form {
-    flex-direction: column; /* چیدن ورودی و دکمه به صورت عمودی */
-    align-items: center; /* تراز کردن عناصر فرم در وسط */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .email-input {
-    width: 100%; /* اشغال تمام عرض در صفحه‌های کوچکتر */
-    margin-right: 0; /* حذف فاصله راست */
-    margin-bottom: 10px; /* ایجاد فاصله پایین بین ورودی و دکمه */
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
   }
 }
 .whole-class {
@@ -427,28 +426,28 @@ body {
   padding-top: 30px;
   padding-bottom: 190px;
   background: url(aks-footor2.png);
-  background-size: cover; /* عکس تمام فضا را می‌گیرد و نسبت تصویر را حفظ می‌کند */
-  background-repeat: no-repeat; /* از تکرار عکس جلوگیری می‌کند */
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 .container-footer {
   width: 1200px;
 }
 .footer-1 ul {
-  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
+  list-style-type: none; 
 }
 .footer-2 ul {
-  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
+  list-style-type: none; 
 }
 .footer-3 ul {
-  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
+  list-style-type: none; 
 }
 .footer-4 ul {
-  list-style-type: none; /* حذف نشانگرهای لیست (دایره پیش‌فرض) */
+  list-style-type: none; 
 }
 .main-li1 {
   margin-bottom: 10px;
-  text-align: right; /* حفظ تراز متن به راست */
+  text-align: right; 
 }
 .menu li {
   display: flex;
@@ -470,7 +469,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  direction: rtl; /* چون فارسیه */
+  direction: rtl; 
   width: fit-content;
   color: black;
 }
@@ -512,7 +511,7 @@ body {
   text-align: center;
   line-height: 16px;
   font-size: 14px;
-  margin-right: 8px; /* به جای margin-left برای فاصله بین متن و آیکون */
+  margin-right: 8px; 
 }
 .icons {
   display: inline-block;
@@ -522,7 +521,7 @@ body {
   text-align: center;
   line-height: 16px;
   font-size: 14px;
-  margin-right: 8px; /* به جای margin-left برای فاصله بین متن و آیکون */
+  margin-right: 8px; 
 }
 .additional-info {
   color: #000000;
